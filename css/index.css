@@ -1,0 +1,107 @@
+/* Estilos gerais para a página */
+body {
+    text-align: center;
+    align-items: center;    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+body a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.cab{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px, 20px;
+}
+.login{
+    position: absolute;
+    right: 20px;
+}
+
+.login a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 1. Estilizando a Grade de Produtos */
+.product-grid {
+    display: grid;
+    /* Cria 3 colunas de tamanho igual. Mude o "3" para o número de colunas que quiser. */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; /* Espaçamento entre os produtos */
+    padding: 20px;
+}
+
+/* 2. Estilizando o Container/Card de cada Produto */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil inicial */
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
+
+    /* ⭐ A MÁGICA COMEÇA AQUI: A Transição ⭐ */
+    /* Isso faz com que QUALQUER mudança (transform, box-shadow) aconteça suavemente em 0.3 segundos. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3. ⭐ O EFEITO AO PASSAR O MOUSE ⭐ */
+.product-card:hover {
+    /* "Saltar para fora": Aumenta o tamanho em 5% e move 10px para cima */
+    transform: scale(1.05) translateY(-10px);
+    
+    /* Aumenta a sombra para dar a impressão de que o card "levantou" da página */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
+
+/* Estilos dos elementos dentro do card */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-card .product-description {
+    font-size: 0.9em;
+    color: #666;
+    height: 40px; /* Define uma altura fixa para alinhar os cards */
+}
+
+.product-card .product-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 15px 0;
+}
+
+.comprar{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 0cap;
+    background-color: transparent;
+    cursor: pointer;
+}

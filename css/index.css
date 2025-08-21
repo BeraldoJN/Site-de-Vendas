@@ -3,7 +3,7 @@ body {
     text-align: center;
     align-items: center;    
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: goldenrod;
     margin: 0;
     padding: 20px;
 }
@@ -41,8 +41,10 @@ h1 {
     display: grid;
     /* Cria 3 colunas de tamanho igual. Mude o "3" para o número de colunas que quiser. */
     grid-template-columns: repeat(2, 1fr); 
-    gap: 30px; /* Espaçamento entre os produtos */
-    padding: 20px;
+    gap: 50px; /* Espaçamento entre os produtos */
+    padding: 30px;
+    background-color: #150606;
+    border-radius: 10px; /* opcional: bordas arredondadas */
 }
 
 /* 2. Estilizando o Container/Card de cada Produto */

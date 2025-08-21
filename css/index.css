@@ -3,15 +3,14 @@ body {
     text-align: center;
     align-items: center;    
     font-family: Arial, sans-serif;
-    background-color: goldenrod;
     margin: 0;
     padding: 20px;
 }
-body {
-    background: linear-gradient(135deg, #FFD700 0%, #FFD700 30%, #000000 30%, #000000 100%);
-    color: white; /* deixa a fonte visível */
-}
 
+body {
+    background: linear-gradient(135deg, #FFD700 0%, #000000 100%);
+    color: white; /* texto visível */
+}
 
 body a {
     margin-left: 15px;
@@ -25,17 +24,7 @@ body a {
     position: relative;
     padding: 10px, 20px;
 }
-.login{
-    position: absolute;
-    right: 20px;
-}
-
-.login a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
-}
-
+ 
 h1 {
     text-align: center;
     color: #333;
@@ -52,6 +41,9 @@ h1 {
     border-radius: 10px; /* opcional: bordas arredondadas */
 }
 
+
+
+
 /* 2. Estilizando o Container/Card de cada Produto */
 .product-card {
     background-color: #ffffff;
@@ -61,11 +53,11 @@ h1 {
     text-align: center;
     padding: 20px;
     overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
-    height: 400px;
-    width: 400px;
+    
     /* ⭐ A MÁGICA COMEÇA AQUI: A Transição ⭐ */
     /* Isso faz com que QUALQUER mudança (transform, box-shadow) aconteça suavemente em 0.3 segundos. */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
 }
 
 /* 3. ⭐ O EFEITO AO PASSAR O MOUSE ⭐ */
@@ -81,7 +73,8 @@ h1 {
 /* Estilos dos elementos dentro do card */
 .product-card img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    width: 200px;
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -113,3 +106,23 @@ h1 {
     background-color: transparent;
     cursor: pointer;
 }
+
+.botoes-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .botoes-navegacao button {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .imagem-produto {
+    height: 200px; /* ou como preferir */
+    width: auto;
+    display: block;
+  }
+  

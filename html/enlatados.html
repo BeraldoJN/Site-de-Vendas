@@ -6,14 +6,45 @@
     <title>Loja</title>
     <link rel="stylesheet" href="../css/index.css">
     
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #FFD700, #000);
+      color: white;
+      transition: opacity 0.6s ease; /* anima a opacidade */
+    }
+
+    body.fade-out {
+      opacity: 0; /* quando aplicamos essa classe, some suavemente */
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 100px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #FFD700;
+      color: black;
+    }
+  </style>
+  
 </head>
 <body >
     
-    <div class="cab">
-
-    <a href="index.html">Logo</a> <!--Link para retornar a página principal (por logo)-->
-
-    </div>
 
     <div class="navbar" >
         <h1>Enlatados</h1> <!--àrea de Navegação e título para mostrar onde a pessoa está-->
@@ -30,21 +61,43 @@
     <div class="product-grid"> <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
 
         <div class="product-card">
-            <img src="#" alt="Nome do Produto 1"> <!--Local para por foto do produto-->
-            <h3>produto</h3> <!--Nome do Produto-->
-            <p class="product-description">descrição.</p> <!--Descrição do Produto-->
-            <p class="product-price">R$ 99,90</p> <!--Preço do Produto-->
+            <img src="../imagens/enlata.jpg" alt="Carne XXX Enlatada">
+            <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
+            <p class="product-description">descrição.</p>
+            <p class="product-price">R$ 99,90</p>
         </div>
 
          <div class="product-card">
-            <img src="#" alt="Nome do Produto 1">
-            <h3>Produto</h3>
+            <img src="../imagens/enlata.jpg" alt="Carne XXX Enlatada">
+            <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
             <p class="product-description">descrição.</p>
             <p class="product-price">R$ 99,90</p>
         </div>
 
         </div>
         
+
+
+
+
+
+        <script>
+    // Ao clicar num link, aplica fade-out antes de mudar de página
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault(); // impede mudança imediata
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = this.href; // depois de 600ms troca de página
+        }, 600);
+      });
+    });
+
+    // Quando entra na página, começa invisível e aparece
+    window.addEventListener("pageshow", () => {
+      document.body.classList.remove("fade-out");
+    });
+  </script>
        <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 
 </body>

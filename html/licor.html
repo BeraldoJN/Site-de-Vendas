@@ -6,14 +6,45 @@
     <title>Loja</title>
     <link rel="stylesheet" href="../css/index.css">
     
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #FFD700, #000);
+      color: white;
+      transition: opacity 0.6s ease; /* anima a opacidade */
+    }
+
+    body.fade-out {
+      opacity: 0; /* quando aplicamos essa classe, some suavemente */
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 100px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #FFD700;
+      color: black;
+    }
+  </style>
+  
 </head>
 <body >
     
-    <div class="cab">
-    <a href="index.html">Logo</a><!--Link para retornar a página principal (por logo)-->
-
-    </div>
-
     <div class="navbar">
         <h1>Licores</h1><!--àrea de Navegação e título para mostrar onde a pessoa está-->
         <nav>
@@ -28,22 +59,55 @@
     <div class="product-grid">
 
         <div class="product-card"><!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
-            <img src="https://via.placeholder.com/300x300" alt="Nome do Produto 1"><!--Local para por foto do produto-->
-            <h3>Produto Exemplo 1</h3><!--Nome do Produto-->
+            <img src="../imagens/licor-amostra.webp" alt="Licor de Menta"><!--Local para por foto do produto-->
+            <h3>Licor de Menta</h3><!--Nome do Produto-->
             <p class="product-description">Uma breve descrição sobre este incrível produto.</p><!--Descrição do Produto-->
             <p class="product-price">R$ 99,90</p><!--Preço do Produto-->
         </div>
 
         <div class="product-card">
-            <img src="https://via.placeholder.com/300x300" alt="Nome do Produto 2">
-            <h3>Produto Exemplo 2</h3>
+            <img src="../imagens/licor-amostra.webp" alt="Licor de Banana">
+            <h3>Licor de Banana</h3>
             <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
             <p class="product-price">R$ 129,90</p>
         </div>
 
+        <div class="product-card">
+            <img src="../imagens/licor-amostra.webp" alt="Licor de Siriguela">
+            <h3>Licor de Siriguela</h3>
+            <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
+            <p class="product-price">R$ 129,90</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../imagens/licor-amostra.webp" alt="Licor de Jabuticaba">
+            <h3>Licor de Jabuticaba</h3>
+            <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
+            <p class="product-price">R$ 129,90</p>
+        </div>
         
 
-        </div>
+
+
+<script>
+    // Ao clicar num link, aplica fade-out antes de mudar de página
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault(); // impede mudança imediata
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = this.href; // depois de 600ms troca de página
+        }, 600);
+      });
+    });
+
+    // Quando entra na página, começa invisível e aparece
+    window.addEventListener("pageshow", () => {
+      document.body.classList.remove("fade-out");
+    });
+  </script>
+
+        
         
         <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a><!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 </body>

@@ -5,8 +5,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-}
-body {
     background: linear-gradient(135deg, #FFD700 0%, #000000 100%);
     color: white; /* texto visível */
 }
@@ -215,4 +213,106 @@ h1 {
     color: #000;
 }
  
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espaço entre imagem e texto */
+    text-decoration: none;
+    background: linear-gradient(135deg, #FFD700, #000000); /* sua paleta amarelo/preto */
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: fit-content; /* só ocupa o tamanho necessário */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    height: 50px;
+    width: 65px;
+    border-radius: 8px; /* cantos arredondados */
+    object-fit: cover;
+}
+
+.logo span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #FFD700, #000000);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+/* Grid de categorias */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Estilo dos cards */
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-8px);
+    background: #FFD700;
+    color: #000;
+    border-color: #000;
+}
+
+
 (ultimo css linha 152)

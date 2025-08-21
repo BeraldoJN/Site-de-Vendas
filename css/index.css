@@ -118,15 +118,15 @@ h1 {
 }
 /* Estilo da barra */
 .navbar {
-    background: linear-gradient(135deg, #FFD700, #000000); /* amarelo + preto */
+    background: linear-gradient(135deg, #FFD700, #000000); /* gradiente amarelo/preto */
     display: flex;
     justify-content: space-between; /* título à esquerda, links à direita */
     align-items: center;
     padding: 15px 30px;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Estilo do título */
 .navbar h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
@@ -134,7 +134,6 @@ h1 {
     margin: 0;
 }
 
-/* Estilo dos links */
 .navbar nav a {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -146,11 +145,11 @@ h1 {
     transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 .navbar nav a:hover {
-    background-color: rgba(255, 215, 0, 0.8); /* amarelo transparente */
+    background-color: rgba(255, 215, 0, 0.8); /* amarelo transparente ao passar o mouse */
     color: black;
 }
+
 
 .product-card {
     background: #fff;
@@ -219,7 +218,7 @@ h1 {
     align-items: center;
     gap: 12px; /* espaço entre imagem e texto */
     text-decoration: none;
-    background: linear-gradient(135deg, #FFD700, #000000); /* sua paleta amarelo/preto */
+    background: linear-gradient(135deg, #FFD700, #000000); /* amarelo/preto */
     padding: 10px 20px;
     border-radius: 12px;
     width: fit-content; /* só ocupa o tamanho necessário */
@@ -240,6 +239,7 @@ h1 {
     color: white;
     letter-spacing: 1px;
 }
+
 
 /* Reset básico */
 * {

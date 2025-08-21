@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 20px;
 }
+body {
+    background: linear-gradient(135deg, #FFD700 0%, #FFD700 30%, #000000 30%, #000000 100%);
+    color: white; /* deixa a fonte visível */
+}
+
 
 body a {
     margin-left: 15px;
@@ -49,14 +54,15 @@ h1 {
 
 /* 2. Estilizando o Container/Card de cada Produto */
 .product-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil inicial */
     text-align: center;
     padding: 20px;
     overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
-
+    height: 400px;
+    width: 400px;
     /* ⭐ A MÁGICA COMEÇA AQUI: A Transição ⭐ */
     /* Isso faz com que QUALQUER mudança (transform, box-shadow) aconteça suavemente em 0.3 segundos. */
     transition: transform 0.3s ease, box-shadow 0.3s ease;

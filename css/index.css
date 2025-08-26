@@ -8,14 +8,7 @@ body {
     background: linear-gradient(135deg, #FFD700 0%, #000000 100%);
     color: white; /* texto visível */
 }
-<<<<<<< HEAD
-=======
 
-body {
-    background: linear-gradient(135deg, #FFD700 0%, #000000 100%);
-    color: white; /* texto visível */
-}
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff
 
 body a {
     margin-left: 15px;
@@ -29,21 +22,7 @@ body a {
     position: relative;
     padding: 10px, 20px;
 }
-<<<<<<< HEAD
-.login{
-    position: absolute;
-    right: 20px;
-}
-
-.login a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
-}   
-
-=======
  
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff
 h1 {
     text-align: center;
     color: #333;
@@ -64,10 +43,7 @@ h1 {
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff
 /* 2. Estilizando o Container/Card de cada Produto */
 .product-card {
     background-color: #ffffff;
@@ -77,10 +53,7 @@ h1 {
     text-align: center;
     padding: 20px;
     overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
-<<<<<<< HEAD
-=======
-    
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff
+
     /* ⭐ A MÁGICA COMEÇA AQUI: A Transição ⭐ */
     /* Isso faz com que QUALQUER mudança (transform, box-shadow) aconteça suavemente em 0.3 segundos. */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -138,7 +111,7 @@ h1 {
     background-color: transparent;
     cursor: pointer;
 }
-<<<<<<< HEAD
+
 /* Estilo da barra */
 .navbar {
     background: linear-gradient(135deg, #FFD700, #000000); /* gradiente amarelo/preto */
@@ -338,8 +311,8 @@ body {
 }
 
 
-(ultimo css linha 152)
-=======
+
+
 
 .botoes-navegacao {
     display: flex;
@@ -360,4 +333,3 @@ body {
     display: block;
   }
   
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff

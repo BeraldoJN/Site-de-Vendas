@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="shortcut icon" href="../imagens/neneca.jpeg" type="image/x-icon">
 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
   <style>
     body {
       margin: 0;
@@ -44,10 +49,29 @@
       background: #FFD700;
       color: black;
     }
-  </style>
+    .navbar-custom {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 20px;
+    }
 
-  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
-  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+    .navbar-custom h1 {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    .navbar-custom a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar-custom a:hover {
+      color: #FFD700;
+    }
+  </style>
 
 </head>
 
@@ -60,7 +84,7 @@
   <br><br><br>
 
 
-  <div class="navbar">
+  <div class="navbar-custom text-center">
     <h1>Licores</h1><!--àrea de Navegação e título para mostrar onde a pessoa está-->
     <nav>
       <a href="index.html">Produtos</a>
@@ -71,69 +95,83 @@
 
   </div>
   <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
-  <div class="product-grid">
 
-    <div class="product-card">
-      <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
-      <img src="../imagens/LicorMenta.png" alt="Licor de Hortelã"><!--Local para por foto do produto-->
-      <h3>Licor de Hortelã</h3><!--Nome do Produto-->
-      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p><!--Descrição do Produto-->
-      <p class="product-price">R$ 15,99</p><!--Preço do Produto-->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
+          <img src="../imagens/LicorMenta.png" alt="Licor de Hortelã"><!--Local para por foto do produto-->
+          <h3>Licor de Hortelã</h3><!--Nome do Produto-->
+          <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+          <!--Descrição do Produto-->
+          <p class="product-price">R$ 15,99</p><!--Preço do Produto-->
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/LicorAcerola.png" alt="Licor de Acerola">
+          <h3>Licor de Acerola</h3>
+          <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+          <p class="product-price">R$ 15,99</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/LicorSiriguela.png" alt="Licor de Siriguela">
+          <h3>Licor de Siriguela</h3>
+          <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+          <p class="product-price">R$ 15,99</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/LicorJabuticaba.png" alt="Licor de Jabuticaba">
+          <h3>Licor de Jabuticaba</h3>
+          <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+          <p class="product-price">R$ 15,99</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/LicorCravoCanela.png" alt="Licor de Cravo e Canela">
+          <h3>Licor de Jabuticaba</h3>
+          <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+          <p class="product-price">R$ 15,99</p>
+        </div>
+      </div>
     </div>
-
-    <div class="product-card">
-      <img src="../imagens/LicorAcerola.png" alt="Licor de Acerola">
-      <h3>Licor de Acerola</h3>
-      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
-      <p class="product-price">R$ 15,99</p>
-    </div>
-
-    <div class="product-card">
-      <img src="../imagens/LicorSiriguela.png" alt="Licor de Siriguela">
-      <h3>Licor de Siriguela</h3>
-      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
-      <p class="product-price">R$ 15,99</p>
-    </div>
-
-    <div class="product-card">
-      <img src="../imagens/LicorJabuticaba.png" alt="Licor de Jabuticaba">
-      <h3>Licor de Jabuticaba</h3>
-      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
-      <p class="product-price">R$ 15,99</p>
-    </div>
-
-    <div class="product-card">
-      <img src="../imagens/LicorCravoCanela.png" alt="Licor de Cravo e Canela">
-      <h3>Licor de Jabuticaba</h3>
-      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
-      <p class="product-price">R$ 15,99</p>
-    </div>
+  </div>
 
 
 
 
-    <script>
-      // Ao clicar num link, aplica fade-out antes de mudar de página
-      document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault(); // impede mudança imediata
-          document.body.classList.add("fade-out");
-          setTimeout(() => {
-            window.location = this.href; // depois de 600ms troca de página
-          }, 600);
-        });
+  <script>
+    // Ao clicar num link, aplica fade-out antes de mudar de página
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // impede mudança imediata
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = this.href; // depois de 600ms troca de página
+        }, 600);
       });
+    });
 
-      // Quando entra na página, começa invisível e aparece
-      window.addEventListener("pageshow", () => {
-        document.body.classList.remove("fade-out");
-      });
-    </script>
+    // Quando entra na página, começa invisível e aparece
+    window.addEventListener("pageshow", () => {
+      document.body.classList.remove("fade-out");
+    });
+  </script>
 
 
 
-    <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png"
-        alt="whatsapp"></a><!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+  <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png"
+      alt="whatsapp"></a><!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 </body>
 
 </html>

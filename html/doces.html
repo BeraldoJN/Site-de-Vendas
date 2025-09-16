@@ -2,16 +2,19 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delícias da Vó Neca</title>
-    <link rel="shortcut icon" href="../imagens/neneca.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delícias da Vó Neca</title>
+  <link rel="shortcut icon" href="../imagens/neneca.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/index.css">
 
-    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
-    <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <style>
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -42,90 +45,123 @@
       transition: transform 0.3s;
     }
 
+
     .card:hover {
       transform: translateY(-8px);
       background: #FFD700;
       color: black;
     }
+
+    .navbar-custom {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 20px;
+    }
+
+    .navbar-custom h1 {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    .navbar-custom a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar-custom a:hover {
+      color: #FFD700;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Logo -->
+  <a href="index.html" class="logo">
+    <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
+    <span>Delícias da Vó Neca</span>
+  </a>
 
-    <a href="index.html" class="logo">
-        <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
-        <span>Delícias da Vó Neca</span>
-    </a>
-    <br><br><br>
+  <!-- Navbar -->
+  <div class="navbar-custom text-center">
+    <h1>🍬 Doces</h1>
+    <nav>
+      <a href="index.html">Produtos</a>
+      <a href="licor.html">Licor</a>
+      <a href="enlatados.html">Enlatados</a>
+    </nav>
+  </div>
 
+  <!-- Produtos -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/DoceLeite.png" alt="Doce de Leite Caseiro">
+          <h3>Doce de Leite <span>Caseiro</span></h3>
+          <p>Um doce cremoso, feito artesanalmente com sabor inesquecível.</p>
+          <p class="product-price">R$ 19,99</p>
+        </div>
+      </div>
 
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/Amendoim.png" alt="Amendoim">
+          <h3>Amendoim Cascudo <span>C/ Açúcar</span></h3>
+          <p>Amendoim irresistível feito no açúcar e raspas de limão.</p>
+          <p class="product-price">R$ 5,99</p>
+        </div>
+      </div>
 
-    <div class="navbar">
-        <h1>🍬 Doces</h1>
-        <nav>
-            <a href="index.html">Produtos</a>
-            <a href="licor.html">Licor</a>
-            <a href="enlatados.html">Enlatados</a>
-        </nav>
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/Goiaba.png" alt="Rosquinhas de Goiabada">
+          <h3>Rosquinha de Goiabada <span>Feitas a mão</span></h3>
+          <p>Rosquinhas com tiras de Goiabada e açúcar refinado.</p>
+          <p class="product-price">R$ 19,99</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="product-card">
+          <img src="../imagens/RosquinhaCanela.png" alt="Rosquinhas a Canela">
+          <h3>Rosquinha de Canela <span>Feitas a mão</span></h3>
+          <p>Rosquinhas de açúcar e canela.</p>
+          <p class="product-price">R$ 19,99</p>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <!-- Botão WhatsApp -->
+  <a class="comprar" href="#" target="_blank" rel="external">
+    <img src="../imagens/whatsappico.png" alt="whatsapp">
+  </a>
 
-    <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
-    <div class="product-grid">
-        <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
+  <!-- Scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    // Fade suave entre páginas
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        if (this.getAttribute("href").includes(".html")) {
+          e.preventDefault();
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location = this.href;
+          }, 600);
+        }
+      });
+    });
 
-        <div class="product-card">
-            <img src="../imagens/DoceLeite.png"
-                alt="Doce de Leite Caseiro"><!-- sempre evitar espaço no nome do arquivo -->
-            <h3>Doce de Leite <span>Caseiro</span></h3> <!-- Nome com subtítulo -->
-            <p class="product-description">Um doce cremoso, feito artesanalmente com sabor inesquecível.</p>
-            <p class="product-price">R$ 19,99</p>
-        </div>
-
-
-        <div class="product-card">
-            <img src="../imagens/Amendoim.png" alt="Amendoim">
-            <h3>Amendoim Cascudo<span>C/ Açucar</span></h3>
-            <p class="product-description">Amendoim's irresistíveis feito no açucar e raspas de limão.</p>
-            <p class="product-price">R$ 5,99</p>
-        </div>
-
-        <div class="product-card">
-            <img src="../imagens/Goiaba.png" alt="Rosquinhas de Goiabada">
-            <h3>Rosquinha de Goiabada<span>Feitas a mão</span></h3>
-            <p class="product-description">Rosquinhas com tiras de Goiabada e açucar refinado.</p>
-            <p class="product-price">R$ 19,99</p>
-        </div>
-
-        <div class="product-card">
-            <img src="../imagens/RosquinhaCanela.png" alt="Rosquinhas a Canela">
-            <h3>Rosquinha de Goiabada<span>Feitas a mão</span></h3>
-            <p class="product-description">Rosquinhas de Açucar e Canela.</p>
-            <p class="product-price">R$ 19,99</p>
-        </div>
-
-        <script>
-            // Ao clicar num link, aplica fade-out antes de mudar de página
-            document.querySelectorAll("a").forEach(link => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault(); // impede mudança imediata
-                    document.body.classList.add("fade-out");
-                    setTimeout(() => {
-                        window.location = this.href; // depois de 600ms troca de página
-                    }, 600);
-                });
-            });
-
-            // Quando entra na página, começa invisível e aparece
-            window.addEventListener("pageshow", () => {
-                document.body.classList.remove("fade-out");
-            });
-        </script>
-
-        <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png"
-                alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
-
+    window.addEventListener("pageshow", () => {
+      document.body.classList.remove("fade-out");
+    });
+  </script>
 </body>
 
 </html>

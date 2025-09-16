@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <link rel="stylesheet" href="../css/index.css">
-    
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="../css/index.css">
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #FFD700, #000);
+      /* background: linear-gradient(135deg, #FFD700, #000); */
       color: white;
-      transition: opacity 0.6s ease; /* anima a opacidade */
+      transition: opacity 0.6s ease;
+      /* anima a opacidade */
     }
 
     body.fade-out {
-      opacity: 0; /* quando aplicamos essa classe, some suavemente */
+      opacity: 0;
+      /* quando aplicamos essa classe, some suavemente */
     }
 
     .categories {
@@ -43,54 +49,42 @@
   </style>
 
 </head>
-<body >
+
+<body>
 
 
 
 
-        <div class="logo">
-            <img src="../imagens/neneca.jpeg" alt="Logo Delícias da Vó Neca">
-            <span>Delícias da Vó Neca</span>
-        </div>
-        <br><br><br>
+  <div class="logo">
+    <img src="../imagens/neneca.jpeg" alt="Logo Delícias da Vó Neca">
+    <span>Delícias da Vó Neca</span>
+  </div>
+  <br><br><br>
 
 
+  <header class="header">
+    <h1> Delícias da Vó Neca</h1>
+    <p>Escolha uma categoria para explorar</p>
+  </header>
+  <main class="categories">
+    <a href="doces.html" class="card doces">
+      <h2>Doces</h2>
+      <p>Caseiros e irresistíveis</p>
+    </a>
+    <a href="licor.html" class="card licor">
+      <h2>Licor</h2>
+      <p>Feito com carinho</p>
+    </a>
+    <a href="enlatados.html" class="card enlatados">
+      <h2>Enlatados</h2>
+      <p>Praticidade e sabor</p>
+    </a>
+  </main>
 
-
-
-
-    
-    <header class="header">
-        <h1> Delícias da Vó Neca</h1>
-        <p>Escolha uma categoria para explorar</p>
-    </header>
-    <main class="categories">
-        <a href="doces.html" class="card doces">
-            <h2>Doces</h2>
-            <p>Caseiros e irresistíveis</p>
-        </a>
-        <a href="licor.html" class="card licor">
-            <h2>Licor</h2>
-            <p>Feito com carinho</p>
-        </a>
-        <a href="enlatados.html" class="card enlatados">
-            <h2>Enlatados</h2>
-            <p>Praticidade e sabor</p>
-        </a>
-    </main>
-
-
-       
-        
-
-
-
-
-
-        <script>
+  <script>
     // Ao clicar num link, aplica fade-out antes de mudar de página
     document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", function(e) {
+      link.addEventListener("click", function (e) {
         e.preventDefault(); // impede mudança imediata
         document.body.classList.add("fade-out");
         setTimeout(() => {
@@ -104,7 +98,9 @@
       document.body.classList.remove("fade-out");
     });
   </script>
-       <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+  <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a>
+  <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 
 </body>
+
 </html>

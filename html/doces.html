@@ -1,109 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/index.js"></script>
-    
 
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+    <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
 
 </head>
-<body >
-    
+
+<body>
+
     <a href="index.html" class="logo">
         <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
         <span>Delícias da Vó Neca</span>
     </a>
     <br><br><br>
 
-    
+
 
     <div class="navbar">
-    <h1>🍬 Doces</h1>
-    <nav>
-        <a href="index.html">Produtos</a>
-        <a href="licor.html">Licor</a>
-        <a href="enlatados.html">Enlatados</a>
-    </nav>
-</div>
+        <h1>🍬 Doces</h1>
+        <nav>
+            <a href="index.html">Produtos</a>
+            <a href="licor.html">Licor</a>
+            <a href="enlatados.html">Enlatados</a>
+        </nav>
+    </div>
 
-    
-        <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
-    <div class="product-grid"><!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
 
-<<<<<<< HEAD
+    <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
+    <div class="product-grid">
+        <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
+
+
         <div class="product-card">
-            <img src="../imagens/doce-de-leite.jpeg" alt="Doce de Leite Caseiro"><!-- sempre evitar espaço no nome do arquivo -->
+            <img src="../imagens/DoceLeite.png"
+                alt="Doce de Leite Caseiro"><!-- sempre evitar espaço no nome do arquivo -->
             <h3>Doce de Leite <span>Caseiro</span></h3> <!-- Nome com subtítulo -->
             <p class="product-description">Um doce cremoso, feito artesanalmente com sabor inesquecível.</p>
+            <p class="product-price">R$ 19,99</p>
+        </div>
+
+
+        <div class="product-card">
+            <img src="../imagens/Amendoim.png" alt="Amendoim">
+            <h3>Amendoim Cascudo<span>C/ Açucar</span></h3>
+            <p class="product-description">Amendoim's irresistíveis feito no açucar e raspas de limão.</p>
             <p class="product-price">R$ 5,99</p>
         </div>
 
-
         <div class="product-card">
-            <img src="../imagens/amendoim.jpeg" alt="Amendoim">
-            <h3>Amendoim Cascudo<span>C/ Açucar</span></h3>
-            <p class="product-description">Amendoim's irresistíveis feito no açucar e raspas de limão.</p>
-            <p class="product-price">R$ 129,90</p>
-=======
-        <div class="product-card" id="test">
-
-            <div class="botoes-navegacao">
-
-                <button onclick="prev()" type="button">prev</button>
-
-                <img src="../imagens/doce de leite.jpeg" alt="Doce de Leite Caseiro" id="prev">
-                <img src="../imagens/amendoim.jpeg" alt="amendoim" hidden id="next">
-
-                <button onclick="next()" type="button">next</button><!--Local para por foto do produto-->
-            
-            </div>
-
-            <h3>Doce de Leite</h3> <!--Nome do Produto-->
-            <h4>Caseiro</h4>
-            <p class="product-description">Doce.</p><!--Descrição do Produto-->
-            <p class="product-price">R$ 5,99</p><!--Preço do Produto-->
->>>>>>> c90fe3905469cae24cb5b8f0adb0be0d8b77a4ff
-        </div>
-
-        <div class="product-card">
-            <img src="../imagens/goiaba.jpeg" alt="Rosquinha de Goiabada">
+            <img src="../imagens/Goiaba.png" alt="Rosquinhas de Goiabada">
             <h3>Rosquinha de Goiabada<span>Feitas a mão</span></h3>
             <p class="product-description">Rosquinhas com tiras de Goiabada e açucar refinado.</p>
-            <p class="product-price">R$ 19,90</p>
+            <p class="product-price">R$ 19,99</p>
         </div>
 
-        
-
-        
-
-
-
-
-
-
+        <div class="product-card">
+            <img src="../imagens/RosquinhaCanela.png" alt="Rosquinhas a Canela">
+            <h3>Rosquinha de Goiabada<span>Feitas a mão</span></h3>
+            <p class="product-description">Rosquinhas de Açucar e Canela.</p>
+            <p class="product-price">R$ 19,99</p>
+        </div>
 
         <script>
-    // Ao clicar num link, aplica fade-out antes de mudar de página
-    document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault(); // impede mudança imediata
-        document.body.classList.add("fade-out");
-        setTimeout(() => {
-          window.location = this.href; // depois de 600ms troca de página
-        }, 600);
-      });
-    });
+            // Ao clicar num link, aplica fade-out antes de mudar de página
+            document.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault(); // impede mudança imediata
+                    document.body.classList.add("fade-out");
+                    setTimeout(() => {
+                        window.location = this.href; // depois de 600ms troca de página
+                    }, 600);
+                });
+            });
 
-    // Quando entra na página, começa invisível e aparece
-    window.addEventListener("pageshow", () => {
-      document.body.classList.remove("fade-out");
-    });
-  </script>
-        
-        <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+            // Quando entra na página, começa invisível e aparece
+            window.addEventListener("pageshow", () => {
+                document.body.classList.remove("fade-out");
+            });
+        </script>
+
+        <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png"
+                alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 
 </body>
+
 </html>

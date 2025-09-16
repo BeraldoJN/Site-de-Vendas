@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <link rel="stylesheet" href="../css/index.css">
-    
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="../css/index.css">
+
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #FFD700, #000);
       color: white;
-      transition: opacity 0.6s ease; /* anima a opacidade */
+      transition: opacity 0.6s ease;
+      /* anima a opacidade */
     }
 
     body.fade-out {
-      opacity: 0; /* quando aplicamos essa classe, some suavemente */
+      opacity: 0;
+      /* quando aplicamos essa classe, some suavemente */
     }
 
     .categories {
@@ -42,80 +45,94 @@
     }
   </style>
 
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+
 </head>
-<body >
-    
-    <a href="index.html" class="logo">
-        <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
-        <span>Delícias da Vó Neca</span>
-    </a>
-    <br><br><br>
+
+<body>
+
+  <a href="index.html" class="logo">
+    <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
+    <span>Delícias da Vó Neca</span>
+  </a>
+  <br><br><br>
 
 
-    <div class="navbar">
-        <h1>Licores</h1><!--àrea de Navegação e título para mostrar onde a pessoa está-->
-        <nav>
-            <a href="index.html">Produtos</a>
-            <a href="doces.html">Doces</a>
-            <a href="enlatados.html">Enlatados</a>
-        </nav>
-        
-        
+  <div class="navbar">
+    <h1>Licores</h1><!--àrea de Navegação e título para mostrar onde a pessoa está-->
+    <nav>
+      <a href="index.html">Produtos</a>
+      <a href="doces.html">Doces</a>
+      <a href="enlatados.html">Enlatados</a>
+    </nav>
+
+
+  </div>
+  <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
+  <div class="product-grid">
+
+    <div class="product-card">
+      <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
+      <img src="../imagens/LicorMenta.png" alt="Licor de Hortelã"><!--Local para por foto do produto-->
+      <h3>Licor de Hortelã</h3><!--Nome do Produto-->
+      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p><!--Descrição do Produto-->
+      <p class="product-price">R$ 15,99</p><!--Preço do Produto-->
     </div>
-        <br><br><!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
-    <div class="product-grid">
 
-        <div class="product-card"><!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
-            <img src="../imagens/licor-amostra.webp" alt="Licor de Menta"><!--Local para por foto do produto-->
-            <h3>Licor de Menta</h3><!--Nome do Produto-->
-            <p class="product-description">Uma breve descrição sobre este incrível produto.</p><!--Descrição do Produto-->
-            <p class="product-price">R$ 99,90</p><!--Preço do Produto-->
-        </div>
+    <div class="product-card">
+      <img src="../imagens/LicorAcerola.png" alt="Licor de Acerola">
+      <h3>Licor de Acerola</h3>
+      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+      <p class="product-price">R$ 15,99</p>
+    </div>
 
-        <div class="product-card">
-            <img src="../imagens/licor-amostra.webp" alt="Licor de Banana">
-            <h3>Licor de Banana</h3>
-            <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
-            <p class="product-price">R$ 129,90</p>
-        </div>
+    <div class="product-card">
+      <img src="../imagens/LicorSiriguela.png" alt="Licor de Siriguela">
+      <h3>Licor de Siriguela</h3>
+      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+      <p class="product-price">R$ 15,99</p>
+    </div>
 
-        <div class="product-card">
-            <img src="../imagens/licor-amostra.webp" alt="Licor de Siriguela">
-            <h3>Licor de Siriguela</h3>
-            <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
-            <p class="product-price">R$ 129,90</p>
-        </div>
+    <div class="product-card">
+      <img src="../imagens/LicorJabuticaba.png" alt="Licor de Jabuticaba">
+      <h3>Licor de Jabuticaba</h3>
+      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+      <p class="product-price">R$ 15,99</p>
+    </div>
 
-        <div class="product-card">
-            <img src="../imagens/licor-amostra.webp" alt="Licor de Jabuticaba">
-            <h3>Licor de Jabuticaba</h3>
-            <p class="product-description">Uma breve descrição sobre este incrível produto.</p>
-            <p class="product-price">R$ 129,90</p>
-        </div>
-        
+    <div class="product-card">
+      <img src="../imagens/LicorCravoCanela.png" alt="Licor de Cravo e Canela">
+      <h3>Licor de Jabuticaba</h3>
+      <p class="product-description">Licor feito com cachaça na propia roça da neneca.</p>
+      <p class="product-price">R$ 15,99</p>
+    </div>
 
 
 
-<script>
-    // Ao clicar num link, aplica fade-out antes de mudar de página
-    document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault(); // impede mudança imediata
-        document.body.classList.add("fade-out");
-        setTimeout(() => {
-          window.location = this.href; // depois de 600ms troca de página
-        }, 600);
+
+    <script>
+      // Ao clicar num link, aplica fade-out antes de mudar de página
+      document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // impede mudança imediata
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location = this.href; // depois de 600ms troca de página
+          }, 600);
+        });
       });
-    });
 
-    // Quando entra na página, começa invisível e aparece
-    window.addEventListener("pageshow", () => {
-      document.body.classList.remove("fade-out");
-    });
-  </script>
+      // Quando entra na página, começa invisível e aparece
+      window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out");
+      });
+    </script>
 
-        
-        
-        <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a><!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+
+
+    <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png"
+        alt="whatsapp"></a><!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
 </body>
+
 </html>

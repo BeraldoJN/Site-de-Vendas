@@ -1,22 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <link rel="stylesheet" href="../css/index.css">
-    
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="../css/index.css">
+
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #FFD700, #000);
       color: white;
-      transition: opacity 0.6s ease; /* anima a opacidade */
+      transition: opacity 0.6s ease;
+      /* anima a opacidade */
     }
 
     body.fade-out {
-      opacity: 0; /* quando aplicamos essa classe, some suavemente */
+      opacity: 0;
+      /* quando aplicamos essa classe, some suavemente */
     }
 
     .categories {
@@ -42,55 +46,60 @@
     }
   </style>
 
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" class="agente"></script>
+  <script src="https://files.bpcontent.cloud/2025/09/13/15/20250913154831-YLXZHQBO.js" defer></script>
+
 </head>
-<body >
-    
-    <a href="index.html" class="logo">
-        <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
-        <span>Delícias da Vó Neca</span>
-    </a>
-    <br><br><br>
+
+<body>
+
+  <a href="index.html" class="logo">
+    <img src="../imagens/neneca.jpeg" alt="Logo Vó Neca">
+    <span>Delícias da Vó Neca</span>
+  </a>
+  <br><br><br>
 
 
-    <div class="navbar" >
-        <h1>Enlatados</h1> <!--àrea de Navegação e título para mostrar onde a pessoa está-->
-        <nav>
-            <a href="index.html">Produtos</a>
-            <a href="doces.html">Doces</a>
-            <a href="licor.html">Licor</a>
-        </nav>
-        
-        
+  <div class="navbar">
+    <h1>Enlatados</h1> <!--àrea de Navegação e título para mostrar onde a pessoa está-->
+    <nav>
+      <a href="index.html">Produtos</a>
+      <a href="doces.html">Doces</a>
+      <a href="licor.html">Licor</a>
+    </nav>
 
+
+
+  </div>
+  <br><br> <!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
+  <div class="product-grid">
+    <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
+
+    <div class="product-card">
+      <img src="../imagens/carne.png" alt="Carne XXX Enlatada">
+      <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
+      <p class="product-description">descrição.</p>
+      <p class="product-price">R$ 99,90</p>
     </div>
-    <br><br> <!--Espaçamento da área de navegação com os produtos (deve ter uma forma melhro de se fazerr isso)-->
-    <div class="product-grid"> <!--área que mostra quantos produtos que vão msotrar no gir, isso pode ser alterado no css-->
 
-        <div class="product-card">
-            <img src="../imagens/enlata.jpg" alt="Carne XXX Enlatada">
-            <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
-            <p class="product-description">descrição.</p>
-            <p class="product-price">R$ 99,90</p>
-        </div>
+    <div class="product-card">
+      <img src="../imagens/carne.png" alt="Carne XXX Enlatada">
+      <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
+      <p class="product-description">descrição.</p>
+      <p class="product-price">R$ 99,90</p>
+    </div>
 
-         <div class="product-card">
-            <img src="../imagens/enlata.jpg" alt="Carne XXX Enlatada">
-            <h3>Carne XXX Enlatada<span>Carne armazenada na lata com óleo</span></h3>
-            <p class="product-description">descrição.</p>
-            <p class="product-price">R$ 99,90</p>
-        </div>
-
-        </div>
-        
+  </div>
 
 
 
 
 
-        <script>
+
+  <script>
     // Ao clicar num link, aplica fade-out antes de mudar de página
     document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", function(e) {
+      link.addEventListener("click", function (e) {
         e.preventDefault(); // impede mudança imediata
         document.body.classList.add("fade-out");
         setTimeout(() => {
@@ -104,7 +113,10 @@
       document.body.classList.remove("fade-out");
     });
   </script>
-       <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a> <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+  <a class="comprar" href="#" target="_blank" rel="external"><img src="../imagens/whatsappico.png" alt="whatsapp"></a>
+  <!--Botão do whatsapp que irá ficar fixo no canto inferior direito da tela sempre-->
+
 
 </body>
+
 </html>
